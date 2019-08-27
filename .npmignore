@@ -1,0 +1,9 @@
+.*
+tsconfig.json
+node_modules/
+testing/
+release/testing/
+release/**/*.tsbuildinfo
+release/**/*.map
+scripts/
+source/

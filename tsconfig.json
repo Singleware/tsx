@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "jsx": "react",
+    "jsxFactory": "JSX.createElement",
+    "strict": true,
+    "sourceMap": true,
+    "incremental": true,
+    "declaration": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "experimentalDecorators": true,
+    "declarationDir": "./typing",
+    "outDir": "./release"
+  },
+  "include": [
+    "./source/**/*",
+    "./testing/**/*"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "author": {
+    "name": "Silas B. Domingos",
+    "email": "hello@balmante.eti.br",
+    "url": "https://balmante.eti.br"
+  },
+  "name": "@singleware/tsx",
+  "description": "Singleware TSX package.",
+  "license": "MIT",
+  "version": "0.0.1-alpha",
+  "main": "release/source/index.js",
+  "types": "typing/source/index.d.ts",
+  "keywords": [
+    "TSX"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/singleware/tsx"
+  },
+  "dependencies": {
+    "@singleware/tasks": "github:singleware/tasks"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.5",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.3"
+  },
+  "prettier": {
+    "printWidth": 130,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "semi": true
+  },
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./release && rm -rf ./typing",
+    "compile": "tsc --build tsconfig.json"
+  }
+}
